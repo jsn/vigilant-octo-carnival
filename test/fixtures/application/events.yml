@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  application: one
+  type: 
+  interview_at: 2025-05-03 03:16:50
+  hired_at: 2025-05-03 03:16:50
+  content: MyText
+
+two:
+  application: two
+  type: 
+  interview_at: 2025-05-03 03:16:50
+  hired_at: 2025-05-03 03:16:50
+  content: MyText
