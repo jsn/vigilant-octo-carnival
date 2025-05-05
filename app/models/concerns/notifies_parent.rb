@@ -6,9 +6,16 @@ module NotifiesParent
   end
 
   class_methods do
-    def notifies_parent rel
+    def notifies_parent *rels
+      rels.each do |rel|
+        unless reflect_on_association(rel).macro == :belongs_to
+          raise "#{rel} is not a `belongs_to`"
+        end
+      end
       block = proc do |rec|
-        rec.send(rel).run_callbacks :association_changed
+        rels.each do |rel|
+          rec.send(rel).run_callbacks :association_changed
+        end
       end
 
       after_save(&block)

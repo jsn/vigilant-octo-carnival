@@ -1,17 +1,11 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  description: MyText
-  status: MyString
-  hired_cnt: 1
-  rejected_cnt: 1
-  ongoing_cnt: 1
+  title: Job 1
+  status: activated
+  description: Job 1 description
 
 two:
-  title: MyString
-  description: MyText
-  status: MyString
-  hired_cnt: 1
-  rejected_cnt: 1
-  ongoing_cnt: 1
+  title: Job 2
+  status: activated
+  description: Job 2 description

@@ -35,19 +35,20 @@ ActiveRecord::Schema[8.0].define(version: 2025_05_03_011641) do
 
   create_table "job_events", force: :cascade do |t|
     t.integer "job_id", null: false
-    t.string "type"
+    t.string "type", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["job_id", "created_at"], name: "index_job_events_on_job_id_and_created_at"
     t.index ["job_id"], name: "index_job_events_on_job_id"
   end
 
   create_table "jobs", force: :cascade do |t|
-    t.string "title"
+    t.string "title", null: false
     t.text "description"
-    t.string "status"
-    t.integer "hired_cnt"
-    t.integer "rejected_cnt"
-    t.integer "ongoing_cnt"
+    t.string "status", default: "deactivated", null: false
+    t.integer "hired_cnt", default: 0, null: false
+    t.integer "rejected_cnt", default: 0, null: false
+    t.integer "ongoing_cnt", default: 0, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -2,14 +2,10 @@
 
 one:
   application: one
-  type: 
-  interview_at: 2025-05-03 03:16:50
-  hired_at: 2025-05-03 03:16:50
+  type: Application::Event::Note
   content: MyText
 
 two:
   application: two
-  type: 
+  type: Application::Event::Interview
   interview_at: 2025-05-03 03:16:50
-  hired_at: 2025-05-03 03:16:50
-  content: MyText

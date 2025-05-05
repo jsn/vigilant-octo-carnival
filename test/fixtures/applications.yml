@@ -2,14 +2,8 @@
 
 one:
   job: one
-  candidate_name: MyString
-  status: MyString
-  notes_cnt: 1
-  last_interview_at: 2025-05-03 03:11:35
+  candidate_name: john doe
 
 two:
-  job: two
-  candidate_name: MyString
-  status: MyString
-  notes_cnt: 1
-  last_interview_at: 2025-05-03 03:11:35
+  job: one
+  candidate_name: jane doe

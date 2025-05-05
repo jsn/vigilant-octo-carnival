@@ -2,8 +2,9 @@
 
 one:
   job: one
-  type: 
+  type: Job::Event::Activated
 
 two:
   job: two
-  type: 
+  type: Job::Event::Activated
+
