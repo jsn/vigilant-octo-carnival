@@ -1,4 +1,6 @@
 class Job < ApplicationRecord
+  validates :status, inclusion: {in: %w{activated deactivated}}
+
   has_many :events
   has_many :applications
 

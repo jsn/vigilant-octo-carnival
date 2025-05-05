@@ -1,4 +1,6 @@
 class Application < ApplicationRecord
+  validates :status, inclusion: {in: %w{applied interview hired rejected}}
+
   belongs_to :job
   notifies_parent :job
 
